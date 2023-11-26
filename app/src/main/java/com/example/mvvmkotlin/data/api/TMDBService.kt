@@ -1,8 +1,8 @@
 package com.example.mvvmkotlin.data.api
 
-import com.example.mvvmkotlin.data.ArtistList
-import com.example.mvvmkotlin.data.MovieList
-import com.example.mvvmkotlin.data.TvShowList
+import com.example.mvvmkotlin.data.model.artist.ArtistList
+import com.example.mvvmkotlin.data.model.movie.MovieList
+import com.example.mvvmkotlin.data.model.tvshow.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
