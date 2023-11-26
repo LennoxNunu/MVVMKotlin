@@ -1,7 +1,7 @@
-package com.example.mvvmkotlin.data
+package com.example.mvvmkotlin.data.model.movie
 
 
-import com.example.mvvmkotlin.data.Movie
+import com.example.mvvmkotlin.data.model.movie.Movie
 import com.google.gson.annotations.SerializedName
 
 data class MovieList(
