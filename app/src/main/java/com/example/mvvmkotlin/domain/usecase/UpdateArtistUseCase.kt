@@ -1,4 +1,4 @@
-package com.example.mvvmkotlin.domain.repository
+package com.example.mvvmkotlin.domain.usecase
 
 import com.example.mvvmkotlin.data.model.artist.Artist
 import com.example.mvvmkotlin.domain.repository.ArtistRepository
