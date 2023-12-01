@@ -1,17 +1,13 @@
 package com.example.mvvmkotlin.data.repository.tvshow
 
 import android.util.Log
-import com.example.mvvmkotlin.data.model.movie.Movie
-import com.example.mvvmkotlin.data.model.movie.MovieList
+
 import com.example.mvvmkotlin.data.model.tvshow.TvShow
 import com.example.mvvmkotlin.data.model.tvshow.TvShowList
-import com.example.mvvmkotlin.data.repository.movie.datasource.MovieCacheDataSource
-import com.example.mvvmkotlin.data.repository.movie.datasource.MovieLocalDataSource
-import com.example.mvvmkotlin.data.repository.movie.datasource.MovieRemoteDatasource
 import com.example.mvvmkotlin.data.repository.tvshow.datasource.TvShowCacheDataSource
 import com.example.mvvmkotlin.data.repository.tvshow.datasource.TvShowLocalDataSource
 import com.example.mvvmkotlin.data.repository.tvshow.datasource.TvShowRemoteDatasource
-import com.example.mvvmkotlin.domain.repository.MovieRepository
+
 import com.example.mvvmkotlin.domain.repository.TvShowRepository
 import retrofit2.Response
 

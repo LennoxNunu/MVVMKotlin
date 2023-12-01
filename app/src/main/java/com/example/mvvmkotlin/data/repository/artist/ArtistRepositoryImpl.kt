@@ -3,16 +3,10 @@ package com.example.mvvmkotlin.data.repository.artist
 import android.util.Log
 import com.example.mvvmkotlin.data.model.artist.Artist
 import com.example.mvvmkotlin.data.model.artist.ArtistList
-import com.example.mvvmkotlin.data.model.movie.Movie
-import com.example.mvvmkotlin.data.model.movie.MovieList
 import com.example.mvvmkotlin.data.repository.artist.datasource.ArtistCacheDataSource
 import com.example.mvvmkotlin.data.repository.artist.datasource.ArtistLocalDataSource
 import com.example.mvvmkotlin.data.repository.artist.datasource.ArtistRemoteDatasource
-import com.example.mvvmkotlin.data.repository.movie.datasource.MovieCacheDataSource
-import com.example.mvvmkotlin.data.repository.movie.datasource.MovieLocalDataSource
-import com.example.mvvmkotlin.data.repository.movie.datasource.MovieRemoteDatasource
 import com.example.mvvmkotlin.domain.repository.ArtistRepository
-import com.example.mvvmkotlin.domain.repository.MovieRepository
 import retrofit2.Response
 
 class ArtistRepositoryImpl(
