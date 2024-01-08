@@ -5,11 +5,14 @@ import com.example.mvvmkotlin.domain.usecase.UpdateMoviesUseCase
 import com.example.mvvmkotlin.presentation.movie.MovieViewModelFactory
 import dagger.Module
 import dagger.Provides
-
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ActivityComponent
+import dagger.hilt.android.scopes.ActivityScoped
 
 @Module
+@InstallIn(ActivityComponent::class)
 class MovieModule {
-    @MovieScope
+    @ActivityScoped
     @Provides
     fun provideMovieViewModelFactory(
         getMoviesUseCase: GetMoviesUseCase,
@@ -20,4 +23,5 @@ class MovieModule {
             updateMoviesUseCase
         )
     }
+
 }

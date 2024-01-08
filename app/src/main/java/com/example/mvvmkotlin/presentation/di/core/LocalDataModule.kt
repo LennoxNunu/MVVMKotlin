@@ -11,27 +11,31 @@ import com.example.mvvmkotlin.data.repository.tvshow.datasource.TvShowLocalDataS
 import com.example.mvvmkotlin.data.repository.tvshow.datasourceImpl.TvShowLocalDataSourceImpl
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-
 @Module
+@InstallIn(SingletonComponent::class)
 class LocalDataModule {
 
     @Singleton
     @Provides
-    fun provideMovieLocalDataSource(movieDao: MovieDao): MovieLocalDataSource {
+    fun provideMovieLocalDataSource(movieDao: MovieDao):MovieLocalDataSource{
         return MovieLocalDataSourceImpl(movieDao)
     }
 
     @Singleton
     @Provides
-    fun provideTvShowLocalDataSource(tvShowDao: TvShowDao): TvShowLocalDataSource {
+    fun provideTvShowLocalDataSource(tvShowDao: TvShowDao):TvShowLocalDataSource{
         return TvShowLocalDataSourceImpl(tvShowDao)
     }
 
     @Singleton
     @Provides
-    fun provideArtistLocalDataSource(artistDao : ArtistDao): ArtistLocalDataSource {
+    fun provideArtistLocalDataSource(artistDao : ArtistDao):ArtistLocalDataSource{
         return ArtistLocalDataSourceImpl(artistDao)
     }
+
+
 }
